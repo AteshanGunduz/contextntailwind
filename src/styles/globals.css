@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button{
+    color: white;
+    font-weight: 600;
+}
+
+button:hover{
+    scale: 1.05;
+}
+
+.payment-container{
+    width: 40rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 3rem;
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+}
+
+.payment-container div{
+    width: 75%;
+    margin: 1rem;
+}
+
+input{
+    border: 1px solid #ccc;
+    color: black;
+    padding: 0.1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.card{
+    color: white;
+    height: 16rem;
+    background: rgb(50,49,49);
+background: linear-gradient(0deg, rgba(50,49,49,1) 0%, rgba(152,152,152,1) 0%, rgba(17,16,16,1) 100%);
+}
+
+.card-back{
+    height: 16rem;
+    background: rgb(94,94,94);
+    background: linear-gradient(0deg, rgba(94,94,94,1) 18%, rgba(17,16,16,1) 100%);
+}
+
+.card-black{
+    width: 100%;
+    height: 4rem;
+    background: black;
+}
+
+.card-cvc{
+    height: 3rem;
+    background-color: #e5e5f7;
+opacity: 0.9;
+background-image:  linear-gradient(whitesmoke 2px, transparent 2px), linear-gradient(90deg, whitesmoke 2px, transparent 2px), linear-gradient(whitesmoke 1px, transparent 1px), linear-gradient(90deg, whitesmoke 1px, #e5e5f7 1px);
+background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+    text-align: end;
+}
