@@ -16,13 +16,19 @@ button:hover{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 3rem;
     position: absolute;
-    top: 5rem;
-    right: 5rem;
+    top: 0rem;
+    right: 0rem;
+    z-index: 1;
+    background: white;
+    z-index: 2;
+
 }
+
 
 .payment-container div{
     width: 75%;
     margin: 1rem;
+    
 }
 
 input{
@@ -37,6 +43,7 @@ input{
     height: 16rem;
     background: rgb(50,49,49);
 background: linear-gradient(0deg, rgba(50,49,49,1) 0%, rgba(152,152,152,1) 0%, rgba(17,16,16,1) 100%);
+    
 }
 
 .card-back{
@@ -59,4 +66,62 @@ background-image:  linear-gradient(whitesmoke 2px, transparent 2px), linear-grad
 background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
 background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
     text-align: end;
+}
+
+@media(max-width: 650px){
+
+    .payment-container{
+        width: 20rem;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 3rem;
+        position: absolute;
+        top: 0rem;
+        background: white;
+        z-index: 2;
+    
+    }
+
+    
+.payment-container div{
+    width: 75%;
+    margin: 1rem;
+    flex-direction: column; 
+    margin: 0.3rem;
+}
+
+.card{
+    height: 10rem;
+}
+
+.card h2{
+    font-size: 0.75rem;
+}
+
+.card h3{
+    font-size: 0.75rem;
+}
+
+
+.card img{
+    width: 2rem;
+    
+}
+
+#card-img{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+
+.card-back{
+    height: 10rem;
+}
+
+.card-back img{
+    width: 3rem;
+}
+
+    
+
 }

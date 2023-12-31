@@ -47,7 +47,7 @@ const Payment = () => {
       <h2 className="mb-4">Add your payment adress</h2>
       {!cardBack ? (
          <div className="card rounded-xl flex flex-col justify-center items-center ">
-         <div className="flex flex justify-between items-center">
+         <div id="card-img"className="flex flex justify-between items-center">
            <img src="/chip.png" alt="" width="50px"/>
            <img src="/ma_symbol.svg" alt="" width="90px" />
          </div>

@@ -10,15 +10,17 @@ const App = () => {
 
 
   return (
-    <div className="flex justify-center flex-col items-center mt-10">
+    <div className="container flex justify-center flex-col items-center mt-10">
     <h2 className="m-10">Payment</h2>
     <h4>Total Price: $234</h4>
     <button onClick={handleClick} className="m-10 bg-blue-400 p-3 rounded-lg">Confirm Payment</button>
+    <div>
     {toggle && (
         <div className="flex flex-col justify-center items-center">
         <Payment />
         </div>
     )}
+   </div>
    </div>
   )
 }
